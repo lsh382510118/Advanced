@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document type="BLUMIND" editor_version="3.1.6000.41874" document_version="3.0.0.0">
+  <!--Create by Blumind, you can download it free from http://www.blumind.org-->
+  <information>
+    <author>Dell</author>
+    <company>
+    </company>
+    <version>3.0</version>
+    <description>
+    </description>
+  </information>
+  <attributes>
+    <item name="editor_show_sidebar">False</item>
+  </attributes>
+  <charts active_chart="0">
+    <chart name="新页面 1" type="MindMap">
+      <remark>
+      </remark>
+      <layout>TREE_RIGHT</layout>
+      <style>
+        <back_color>White</back_color>
+        <fore_color>Black</fore_color>
+        <line_color>LightSlateGray</line_color>
+        <border_color>SlateGray</border_color>
+        <node_back_color>LightGray</node_back_color>
+        <node_fore_color>Black</node_fore_color>
+        <select_color>RoyalBlue</select_color>
+        <hover_color>MediumSlateBlue</hover_color>
+        <link_line_color>Green</link_line_color>
+        <widget_margin>1</widget_margin>
+        <picture_thumb_size>100, 100</picture_thumb_size>
+      </style>
+      <nodes>
+        <node id="1" text="前端 " x="153" y="20" width="53" height="41" text_b="12, 12, 29, 17">
+          <style>
+            <back_color>Silver</back_color>
+            <fore_color>Black</fore_color>
+            <border_color>Black</border_color>
+            <padding>12</padding>
+          </style>
+          <nodes>
+            <node id="1" text="布局" x="259" y="71" width="33" height="21" text_b="2, 2, 29, 17" fold_btn_b="246, 75, 13, 13">
+              <nodes>
+                <node id="2" text="flex" x="355" y="102" width="29" height="21" text_b="2, 2, 25, 17" fold_btn_b="342, 106, 13, 13">
+                  <nodes>
+                    <node id="3" text="父元素- box元素" x="449" y="133" width="101" height="21" text_b="2, 2, 97, 17" fold_btn_b="436, 137, 13, 13">
+                      <nodes>
+                        <node id="4" text="align-content 多根轴线的对齐方式" x="579" y="164" width="203" height="21" folded="True" text_b="2, 2, 199, 17" fold_btn_b="566, 168, 13, 13">
+                          <nodes>
+                            <node id="5" text="flex-start" x="27265" y="10144" width="61" height="21" text_b="2, 2, 57, 17" />
+                            <node id="6" text="子主题 2" x="27265" y="10175" width="56" height="21" text_b="2, 2, 52, 17" />
+                            <node id="7" text="子主题 3" x="27265" y="10206" width="56" height="21" text_b="2, 2, 52, 17" />
+                            <node id="8" text="子主题 4" x="27265" y="10237" width="56" height="21" text_b="2, 2, 52, 17" />
+                            <node id="9" text="子主题 5" x="27265" y="10268" width="56" height="21" text_b="2, 2, 52, 17" />
+                            <node id="10" text="子主题 6" x="27265" y="10299" width="56" height="21" text_b="2, 2, 52, 17" />
+                          </nodes>
+                          <lines />
+                        </node>
+                        <node id="11" text="align-items 交叉轴上布局" x="579" y="195" width="153" height="21" folded="True" text_b="2, 2, 149, 17" fold_btn_b="566, 199, 13, 13">
+                          <nodes>
+                            <node id="12" text="flex-start" x="27052" y="10155" width="61" height="21" text_b="2, 2, 57, 17" />
+                            <node id="13" text="flex-end" x="27052" y="10186" width="57" height="21" text_b="2, 2, 53, 17" />
+                            <node id="14" text="cneter" x="27052" y="10217" width="46" height="21" text_b="2, 2, 42, 17" />
+                            <node id="15" text="baseline" x="27052" y="10248" width="57" height="21" text_b="2, 2, 53, 17" />
+                            <node id="16" text="stretch" x="27052" y="10279" width="49" height="21" text_b="2, 2, 45, 17" />
+                          </nodes>
+                          <lines />
+                        </node>
+                        <node id="17" text="justify-content 主轴方向" x="579" y="226" width="148" height="21" folded="True" text_b="2, 2, 144, 17" fold_btn_b="566, 230, 13, 13">
+                          <nodes>
+                            <node id="18" text="flex-start 主轴起点" x="26862" y="10166" width="114" height="21" text_b="2, 2, 110, 17" />
+                            <node id="19" text="flex-end  主轴末点" x="26862" y="10197" width="114" height="21" text_b="2, 2, 110, 17" />
+                            <node id="20" text="center 主轴中间" x="26862" y="10228" width="99" height="21" text_b="2, 2, 95, 17" />
+                            <node id="21" text="space-between 主轴 前中后" x="26862" y="10259" width="168" height="21" text_b="2, 2, 164, 17" />
+                            <node id="22" text="space-around 主轴-间距" x="26862" y="10290" width="148" height="21" text_b="2, 2, 144, 17" />
+                          </nodes>
+                          <lines />
+                        </node>
+                        <node id="23" text="flex-wrap 换行" x="579" y="257" width="92" height="21" folded="True" text_b="2, 2, 88, 17" fold_btn_b="566, 261, 13, 13">
+                          <nodes>
+                            <node id="24" text="nowrap 不换行" x="26646" y="10177" width="94" height="21" text_b="2, 2, 90, 17" />
+                            <node id="25" text="wrap 换行" x="26646" y="10208" width="66" height="21" text_b="2, 2, 62, 17" />
+                            <node id="26" text="wrap-reverse 上下行顺序" x="26646" y="10239" width="151" height="21" text_b="2, 2, 147, 17" />
+                          </nodes>
+                          <lines />
+                        </node>
+                        <node id="27" text="主轴方向(flex-direction)" x="579" y="288" width="145" height="21" folded="True" text_b="2, 2, 141, 17" fold_btn_b="566, 292, 13, 13">
+                          <nodes>
+                            <node id="28" text="row(default) 水平" x="26476" y="10188" width="109" height="21" text_b="2, 2, 105, 17" />
+                            <node id="29" text="column 垂直" x="26476" y="10219" width="81" height="21" text_b="2, 2, 77, 17" />
+                            <node id="30" text="row-reverse 反向水平" x="26476" y="10250" width="132" height="21" text_b="2, 2, 128, 17" />
+                            <node id="31" text="column-reverse 垂直反向" x="26476" y="10281" width="154" height="21" text_b="2, 2, 150, 17" />
+                          </nodes>
+                          <lines />
+                        </node>
+                      </nodes>
+                      <lines>
+                        <line target="4" begin_side="Bottom" end_side="Left" begin_rect="449, 133, 101, 21" end_rect="566, 164, 216, 21" />
+                        <line target="11" begin_side="Bottom" end_side="Left" begin_rect="449, 133, 101, 21" end_rect="566, 195, 166, 21" />
+                        <line target="17" begin_side="Bottom" end_side="Left" begin_rect="449, 133, 101, 21" end_rect="566, 226, 161, 21" />
+                        <line target="23" begin_side="Bottom" end_side="Left" begin_rect="449, 133, 101, 21" end_rect="566, 257, 105, 21" />
+                        <line target="27" begin_side="Bottom" end_side="Left" begin_rect="449, 133, 101, 21" end_rect="566, 288, 158, 21" />
+                      </lines>
+                    </node>
+                    <node id="32" text="子元素-flex元素" x="449" y="319" width="96" height="21" text_b="2, 2, 92, 17" fold_btn_b="436, 323, 13, 13">
+                      <nodes>
+                        <node id="33" text="align-self" x="577" y="350" width="63" height="21" text_b="2, 2, 59, 17" fold_btn_b="564, 354, 13, 13">
+                          <nodes>
+                            <node id="34" text="设置独立的align-item" x="688" y="381" width="131" height="21" text_b="2, 2, 127, 17" />
+                          </nodes>
+                          <lines>
+                            <line target="34" begin_side="Bottom" end_side="Left" begin_rect="577, 350, 63, 21" end_rect="688, 381, 131, 21" />
+                          </lines>
+                        </node>
+                        <node id="35" text="flex  （flex-grow  、flex-shrink flex-basis  的缩写集合） " x="577" y="412" width="328" height="21" text_b="2, 2, 324, 17" fold_btn_b="564, 416, 13, 13">
+                          <nodes>
+                            <node id="36" text="默认值：0 1 auto" x="821" y="443" width="107" height="21" text_b="2, 2, 103, 17" />
+                          </nodes>
+                          <lines>
+                            <line target="36" begin_side="Bottom" end_side="Left" begin_rect="577, 412, 328, 21" end_rect="821, 443, 107, 21" />
+                          </lines>
+                        </node>
+                        <node id="37" text="flex-basis" x="577" y="474" width="64" height="21" text_b="2, 2, 60, 17" fold_btn_b="564, 478, 13, 13">
+                          <nodes>
+                            <node id="38" text="定义 项目的空间，大小" x="689" y="505" width="136" height="21" text_b="2, 2, 132, 17" />
+                          </nodes>
+                          <lines>
+                            <line target="38" begin_side="Bottom" end_side="Left" begin_rect="577, 474, 64, 21" end_rect="689, 505, 136, 21" />
+                          </lines>
+                        </node>
+                        <node id="39" text="flex-shrink 缩小的比例" x="577" y="536" width="136" height="21" text_b="2, 2, 132, 17" fold_btn_b="564, 540, 13, 13">
+                          <nodes>
+                            <node id="40" text="数字（默认1，空间不足就缩小；0不缩小）" x="725" y="567" width="245" height="21" text_b="2, 2, 241, 17" />
+                          </nodes>
+                          <lines>
+                            <line target="40" begin_side="Bottom" end_side="Left" begin_rect="577, 536, 136, 21" end_rect="725, 567, 245, 21" />
+                          </lines>
+                        </node>
+                        <node id="41" text="flex-grow 分配放大的比例" x="577" y="598" width="155" height="21" text_b="2, 2, 151, 17" fold_btn_b="564, 602, 13, 13">
+                          <nodes>
+                            <node id="42" text="数字(默认0,当为0时，有空间也不放大)" x="734" y="629" width="220" height="21" text_b="2, 2, 216, 17" />
+                          </nodes>
+                          <lines>
+                            <line target="42" begin_side="Bottom" end_side="Left" begin_rect="577, 598, 155, 21" end_rect="734, 629, 220, 21" />
+                          </lines>
+                        </node>
+                        <node id="43" text="order 排列顺序" x="577" y="660" width="94" height="21" text_b="2, 2, 90, 17" fold_btn_b="564, 664, 13, 13">
+                          <nodes>
+                            <node id="44" text="数字(数值越小，排列越靠前)" x="704" y="691" width="165" height="21" text_b="2, 2, 161, 17" />
+                          </nodes>
+                          <lines>
+                            <line target="44" begin_side="Bottom" end_side="Left" begin_rect="577, 660, 94, 21" end_rect="704, 691, 165, 21" />
+                          </lines>
+                        </node>
+                      </nodes>
+                      <lines>
+                        <line target="33" begin_side="Bottom" end_side="Left" begin_rect="449, 319, 96, 21" end_rect="564, 350, 76, 21" />
+                        <line target="35" begin_side="Bottom" end_side="Left" begin_rect="449, 319, 96, 21" end_rect="564, 412, 341, 21" />
+                        <line target="37" begin_side="Bottom" end_side="Left" begin_rect="449, 319, 96, 21" end_rect="564, 474, 77, 21" />
+                        <line target="39" begin_side="Bottom" end_side="Left" begin_rect="449, 319, 96, 21" end_rect="564, 536, 149, 21" />
+                        <line target="41" begin_side="Bottom" end_side="Left" begin_rect="449, 319, 96, 21" end_rect="564, 598, 168, 21" />
+                        <line target="43" begin_side="Bottom" end_side="Left" begin_rect="449, 319, 96, 21" end_rect="564, 660, 107, 21" />
+                      </lines>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="3" begin_side="Bottom" end_side="Left" begin_rect="355, 102, 29, 21" end_rect="436, 133, 114, 21" />
+                    <line target="32" begin_side="Bottom" end_side="Left" begin_rect="355, 102, 29, 21" end_rect="436, 319, 109, 21" />
+                  </lines>
+                </node>
+              </nodes>
+              <lines>
+                <line target="2" begin_side="Bottom" end_side="Left" begin_rect="259, 71, 33, 21" end_rect="342, 102, 42, 21" />
+              </lines>
+            </node>
+            <node id="32" text="组件（plugin）" x="259" y="722" width="96" height="21" text_b="2, 2, 92, 17" fold_btn_b="246, 726, 13, 13">
+              <nodes>
+                <node id="33" text="子主题 4" x="387" y="753" width="56" height="21" text_b="2, 2, 52, 17" />
+                <node id="34" text="标题（title）" x="387" y="784" width="81" height="21" text_b="2, 2, 77, 17" />
+                <node id="35" text="标签（tab）" x="387" y="815" width="77" height="21" text_b="2, 2, 73, 17" />
+                <node id="36" text="面包屑（Breadcrumb）" x="387" y="846" width="143" height="21" text_b="2, 2, 139, 17" />
+              </nodes>
+              <lines>
+                <line target="33" begin_side="Bottom" end_side="Left" begin_rect="259, 722, 96, 21" end_rect="387, 753, 56, 21" />
+                <line target="34" begin_side="Bottom" end_side="Left" begin_rect="259, 722, 96, 21" end_rect="387, 784, 81, 21" />
+                <line target="35" begin_side="Bottom" end_side="Left" begin_rect="259, 722, 96, 21" end_rect="387, 815, 77, 21" />
+                <line target="36" begin_side="Bottom" end_side="Left" begin_rect="259, 722, 96, 21" end_rect="387, 846, 143, 21" />
+              </lines>
+            </node>
+            <node id="37" text="表单（form）" x="259" y="877" width="86" height="21" text_b="2, 2, 82, 17" />
+            <node id="2" text="列表（list）" x="259" y="908" width="75" height="21" folded="True" text_b="2, 2, 71, 17" fold_btn_b="246, 912, 13, 13">
+              <nodes>
+                <node id="3" text="list-wrap 外边距" x="50888" y="20200" width="101" height="21" text_b="2, 2, 97, 17" />
+                <node id="4" text="url-list 可链接" x="50888" y="20231" width="87" height="21" text_b="2, 2, 83, 17" />
+                <node id="5" text="img-list 图文结合" x="50888" y="20262" width="107" height="21" text_b="2, 2, 103, 17" />
+                <node id="6" text="list-line 线框" x="50888" y="20293" width="80" height="21" text_b="2, 2, 76, 17" />
+                <node id="7" text="list-stretch 左右布局" x="50888" y="20324" width="124" height="21" text_b="2, 2, 120, 17" />
+              </nodes>
+              <lines />
+            </node>
+            <node id="8" text="按钮（btn）" x="259" y="939" width="78" height="21" text_b="2, 2, 74, 17" fold_btn_b="246, 943, 13, 13">
+              <style>
+                <text_align>Right</text_align>
+                <fill_type>Solid</fill_type>
+              </style>
+              <nodes>
+                <node id="9" text="块状-block" x="378" y="970" width="71" height="21" text_b="2, 2, 67, 17" fold_btn_b="365, 974, 13, 13">
+                  <nodes>
+                    <node id="10" text="btn-block" x="493" y="1001" width="66" height="21" text_b="2, 2, 62, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="10" begin_side="Bottom" end_side="Left" begin_rect="378, 970, 71, 21" end_rect="493, 1001, 66, 21" />
+                  </lines>
+                </node>
+                <node id="11" text="默认-base" x="378" y="1032" width="66" height="21" text_b="2, 2, 62, 17" fold_btn_b="365, 1036, 13, 13">
+                  <nodes>
+                    <node id="12" text="btn-default 默认按钮" x="491" y="1063" width="129" height="21" text_b="2, 2, 125, 17" />
+                    <node id="13" text="btn-primary 主题色按钮" x="491" y="1094" width="145" height="21" text_b="2, 2, 141, 17" />
+                    <node id="14" text="btn-secondeary 主题色次一级按钮" x="491" y="1125" width="204" height="21" text_b="2, 2, 200, 17" />
+                    <node id="15" text="btn-success 绿色按钮" x="491" y="1156" width="131" height="21" text_b="2, 2, 127, 17" />
+                    <node id="16" text="btn-warn 橙色按钮" x="491" y="1187" width="116" height="21" text_b="2, 2, 112, 17" />
+                    <node id="17" text="btn-danger 红色按钮" x="491" y="1218" width="129" height="21" text_b="2, 2, 125, 17" />
+                    <node id="18" text="btn-link 链接按钮" x="491" y="1249" width="108" height="21" text_b="2, 2, 104, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="12" begin_side="Bottom" end_side="Left" begin_rect="378, 1032, 66, 21" end_rect="491, 1063, 129, 21" />
+                    <line target="13" begin_side="Bottom" end_side="Left" begin_rect="378, 1032, 66, 21" end_rect="491, 1094, 145, 21" />
+                    <line target="14" begin_side="Bottom" end_side="Left" begin_rect="378, 1032, 66, 21" end_rect="491, 1125, 204, 21" />
+                    <line target="15" begin_side="Bottom" end_side="Left" begin_rect="378, 1032, 66, 21" end_rect="491, 1156, 131, 21" />
+                    <line target="16" begin_side="Bottom" end_side="Left" begin_rect="378, 1032, 66, 21" end_rect="491, 1187, 116, 21" />
+                    <line target="17" begin_side="Bottom" end_side="Left" begin_rect="378, 1032, 66, 21" end_rect="491, 1218, 129, 21" />
+                    <line target="18" begin_side="Bottom" end_side="Left" begin_rect="378, 1032, 66, 21" end_rect="491, 1249, 108, 21" />
+                  </lines>
+                </node>
+                <node id="19" text="大小-size" x="378" y="1280" width="61" height="21" text_b="2, 2, 57, 17" fold_btn_b="365, 1284, 13, 13">
+                  <nodes>
+                    <node id="20" text="btn-large 大按钮" x="488" y="1311" width="104" height="21" text_b="2, 2, 100, 17" />
+                    <node id="21" text="btn-min 小按钮" x="488" y="1342" width="97" height="21" text_b="2, 2, 93, 17" />
+                    <node id="22" text="btn-xlarge 超大按钮" x="488" y="1373" width="123" height="21" text_b="2, 2, 119, 17" />
+                    <node id="23" text="btn-xmin 超小按钮" x="488" y="1404" width="116" height="21" text_b="2, 2, 112, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="20" begin_side="Bottom" end_side="Left" begin_rect="378, 1280, 61, 21" end_rect="488, 1311, 104, 21" />
+                    <line target="21" begin_side="Bottom" end_side="Left" begin_rect="378, 1280, 61, 21" end_rect="488, 1342, 97, 21" />
+                    <line target="22" begin_side="Bottom" end_side="Left" begin_rect="378, 1280, 61, 21" end_rect="488, 1373, 123, 21" />
+                    <line target="23" begin_side="Bottom" end_side="Left" begin_rect="378, 1280, 61, 21" end_rect="488, 1404, 116, 21" />
+                  </lines>
+                </node>
+                <node id="24" text="圆角-raduse" x="378" y="1435" width="78" height="21" text_b="2, 2, 74, 17" fold_btn_b="365, 1439, 13, 13">
+                  <nodes>
+                    <node id="25" text="btn-radius 圆角按钮" x="497" y="1466" width="123" height="21" text_b="2, 2, 119, 17" />
+                    <node id="26" text="btn-round 椭圆按钮" x="497" y="1497" width="123" height="21" text_b="2, 2, 119, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="25" begin_side="Bottom" end_side="Left" begin_rect="378, 1435, 78, 21" end_rect="497, 1466, 123, 21" />
+                    <line target="26" begin_side="Bottom" end_side="Left" begin_rect="378, 1435, 78, 21" end_rect="497, 1497, 123, 21" />
+                  </lines>
+                </node>
+                <node id="27" text="组合-grupe" x="378" y="1528" width="74" height="21" text_b="2, 2, 70, 17" fold_btn_b="365, 1532, 13, 13">
+                  <nodes>
+                    <node id="28" text="还没理透-思考" x="495" y="1559" width="88" height="21" text_b="2, 2, 84, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="28" begin_side="Bottom" end_side="Left" begin_rect="378, 1528, 74, 21" end_rect="495, 1559, 88, 21" />
+                  </lines>
+                </node>
+                <node id="29" text="状态-state" x="378" y="1590" width="67" height="21" text_b="2, 2, 63, 17" fold_btn_b="365, 1594, 13, 13">
+                  <nodes>
+                    <node id="30" text="btn-disabled 禁用" x="491" y="1621" width="112" height="21" text_b="2, 2, 108, 17" />
+                    <node id="31" text="。。。。" x="491" y="1652" width="58" height="21" text_b="2, 2, 54, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="30" begin_side="Bottom" end_side="Left" begin_rect="378, 1590, 67, 21" end_rect="491, 1621, 112, 21" />
+                    <line target="31" begin_side="Bottom" end_side="Left" begin_rect="378, 1590, 67, 21" end_rect="491, 1652, 58, 21" />
+                  </lines>
+                </node>
+              </nodes>
+              <lines>
+                <line target="9" begin_side="Bottom" end_side="Left" begin_rect="259, 939, 78, 21" end_rect="365, 970, 84, 21" />
+                <line target="11" begin_side="Bottom" end_side="Left" begin_rect="259, 939, 78, 21" end_rect="365, 1032, 79, 21" />
+                <line target="19" begin_side="Bottom" end_side="Left" begin_rect="259, 939, 78, 21" end_rect="365, 1280, 74, 21" />
+                <line target="24" begin_side="Bottom" end_side="Left" begin_rect="259, 939, 78, 21" end_rect="365, 1435, 91, 21" />
+                <line target="27" begin_side="Bottom" end_side="Left" begin_rect="259, 939, 78, 21" end_rect="365, 1528, 87, 21" />
+                <line target="29" begin_side="Bottom" end_side="Left" begin_rect="259, 939, 78, 21" end_rect="365, 1590, 80, 21" />
+              </lines>
+            </node>
+          </nodes>
+          <lines>
+            <line target="1" begin_side="Bottom" end_side="Left" begin_rect="153, 20, 53, 41" end_rect="246, 71, 46, 21" />
+            <line target="32" begin_side="Bottom" end_side="Left" begin_rect="153, 20, 53, 41" end_rect="246, 722, 109, 21" />
+            <line target="37" begin_side="Bottom" end_side="Left" begin_rect="153, 20, 53, 41" end_rect="259, 877, 86, 21" />
+            <line target="2" begin_side="Bottom" end_side="Left" begin_rect="153, 20, 53, 41" end_rect="246, 908, 88, 21" />
+            <line target="8" begin_side="Bottom" end_side="Left" begin_rect="153, 20, 53, 41" end_rect="246, 939, 91, 21" />
+          </lines>
+        </node>
+      </nodes>
+    </chart>
+  </charts>
+</document>

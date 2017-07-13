@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document type="BLUMIND" editor_version="3.1.6000.41874" document_version="3.0.0.0">
+  <!--Create by Blumind, you can download it free from http://www.blumind.org-->
+  <information>
+    <author>Dell</author>
+    <company>
+    </company>
+    <version>3.0</version>
+    <description>
+    </description>
+  </information>
+  <attributes>
+    <item name="editor_show_sidebar">True</item>
+  </attributes>
+  <charts active_chart="0">
+    <chart name="新页面 1" type="MindMap">
+      <remark>
+      </remark>
+      <layout>LOGIC_RIGHT</layout>
+      <style>
+        <back_color>White</back_color>
+        <fore_color>Black</fore_color>
+        <line_color>LightSlateGray</line_color>
+        <border_color>SlateGray</border_color>
+        <node_back_color>LightGray</node_back_color>
+        <node_fore_color>Black</node_fore_color>
+        <select_color>RoyalBlue</select_color>
+        <hover_color>MediumSlateBlue</hover_color>
+        <link_line_color>Green</link_line_color>
+        <widget_margin>1</widget_margin>
+        <picture_thumb_size>100, 100</picture_thumb_size>
+      </style>
+      <nodes>
+        <node id="1" text="中心主题" x="20" y="428" width="78" height="41" text_b="12, 12, 54, 17">
+          <style>
+            <back_color>Silver</back_color>
+            <fore_color>Black</fore_color>
+            <border_color>Black</border_color>
+            <padding>12</padding>
+          </style>
+          <nodes>
+            <node id="2" text="UED[User Experience Design 用户体验设计]" x="178" y="438" width="259" height="21" text_b="2, 2, 255, 17" fold_btn_b="437, 442, 13, 13">
+              <nodes>
+                <node id="3" text="有待补充" x="517" y="20" width="58" height="21" text_b="2, 2, 54, 17" />
+                <node id="4" text="组织结构" x="517" y="66" width="58" height="21" text_b="2, 2, 54, 17" fold_btn_b="575, 70, 13, 13">
+                  <nodes>
+                    <node id="5" text="有个小组每周得抽出一些时间研究UE以及相对专业的相关知识和技能" x="655" y="51" width="383" height="21" text_b="2, 2, 379, 17" />
+                    <node id="6" text="分成多个小组，分别负责不同部门，这样的好处，更加专注而更精，风格更加统一，在规范没出来之前，可以达到相对较高水平的设计模块复用的状态" x="655" y="82" width="824" height="21" text_b="2, 2, 820, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="5" begin_side="Right" end_side="Left" begin_rect="517, 66, 71, 21" end_rect="655, 51, 383, 21" />
+                    <line target="6" begin_side="Right" end_side="Left" begin_rect="517, 66, 71, 21" end_rect="655, 82, 824, 21" />
+                  </lines>
+                </node>
+                <node id="7" text="发展规划" x="517" y="485" width="58" height="21" text_b="2, 2, 54, 17" fold_btn_b="575, 489, 13, 13">
+                  <nodes>
+                    <node id="8" text="规范建设" x="655" y="423" width="58" height="21" text_b="2, 2, 54, 17" fold_btn_b="713, 427, 13, 13">
+                      <nodes>
+                        <node id="9" text="规范框架" x="793" y="407" width="58" height="21" text_b="2, 2, 54, 17" fold_btn_b="851, 411, 13, 13">
+                          <nodes>
+                            <node id="10" text="交互" x="931" y="175" width="33" height="21" text_b="2, 2, 29, 17" fold_btn_b="964, 179, 13, 13">
+                              <nodes>
+                                <node id="11" text="具体交互" x="1044" y="144" width="58" height="21" text_b="2, 2, 54, 17" fold_btn_b="1102, 148, 13, 13">
+                                  <nodes>
+                                    <node id="12" text="方案一：根据操作（比如，鼠标：滑过、点击之类的）走" x="1182" y="113" width="317" height="21" text_b="2, 2, 313, 17" />
+                                    <node id="13" text="方案二：根据用户意图（比如，退出，进入，应该有很多，一时想不起）走（main）" x="1182" y="144" width="470" height="21" text_b="2, 2, 466, 17" />
+                                    <node id="14" text="没啥货好说的，等我了解了这方面的专业知识再补充，以上2点纯属经验之谈。凑数" x="1182" y="175" width="461" height="21" text_b="2, 2, 457, 17" />
+                                  </nodes>
+                                  <lines>
+                                    <line target="12" begin_side="Right" end_side="Left" begin_rect="1044, 144, 71, 21" end_rect="1182, 113, 317, 21" />
+                                    <line target="13" begin_side="Right" end_side="Left" begin_rect="1044, 144, 71, 21" end_rect="1182, 144, 470, 21" />
+                                    <line target="14" begin_side="Right" end_side="Left" begin_rect="1044, 144, 71, 21" end_rect="1182, 175, 461, 21" />
+                                  </lines>
+                                </node>
+                                <node id="15" text="理论方向" x="1044" y="206" width="58" height="21" text_b="2, 2, 54, 17" fold_btn_b="1102, 210, 13, 13">
+                                  <nodes>
+                                    <node id="16" text="这一方面的知识，不得不说，应该累计为零，现在所有的几乎都是几乎个人视觉感受，说白了就是知其然不知其所以然，这是不严谨，不专业的表现" x="1182" y="206" width="812" height="21" text_b="2, 2, 808, 17" />
+                                  </nodes>
+                                  <lines>
+                                    <line target="16" begin_side="Right" end_side="Left" begin_rect="1044, 206, 71, 21" end_rect="1182, 206, 812, 21" />
+                                  </lines>
+                                </node>
+                                <node id="17" text="Tips:这是一个大类，里面应该保函很多特效，应该是狂拽酷炫吊炸天" x="1044" y="237" width="381" height="21" text_b="2, 2, 377, 17" />
+                              </nodes>
+                              <lines>
+                                <line target="11" begin_side="Right" end_side="Left" begin_rect="931, 175, 46, 21" end_rect="1044, 144, 58, 21" />
+                                <line target="15" begin_side="Right" end_side="Left" begin_rect="931, 175, 46, 21" end_rect="1044, 206, 58, 21" />
+                                <line target="17" begin_side="Right" end_side="Left" begin_rect="931, 175, 46, 21" end_rect="1044, 237, 381, 21" />
+                              </lines>
+                            </node>
+                            <node id="18" text="有待补充，一时想不起来" x="931" y="268" width="144" height="21" text_b="2, 2, 140, 17" />
+                            <node id="19" text="间距" x="931" y="330" width="33" height="21" text_b="2, 2, 29, 17" fold_btn_b="964, 334, 13, 13">
+                              <nodes>
+                                <node id="20" text="布局 - 间距" x="1044" y="299" width="71" height="21" text_b="2, 2, 67, 17" />
+                                <node id="21" text="列表间距" x="1044" y="330" width="58" height="21" text_b="2, 2, 54, 17" />
+                                <node id="22" text="Tips:个人建议从分辨率适配角度出发（独立适配【2种】 以及 同时适配）" x="1044" y="361" width="408" height="21" text_b="2, 2, 404, 17" />
+                              </nodes>
+                              <lines>
+                                <line target="20" begin_side="Right" end_side="Left" begin_rect="931, 330, 46, 21" end_rect="1044, 299, 71, 21" />
+                                <line target="21" begin_side="Right" end_side="Left" begin_rect="931, 330, 46, 21" end_rect="1044, 330, 58, 21" />
+                                <line target="22" begin_side="Right" end_side="Left" begin_rect="931, 330, 46, 21" end_rect="1044, 361, 408, 21" />
+                              </lines>
+                            </node>
+                            <node id="23" text="布局-尺寸" x="931" y="423" width="63" height="21" text_b="2, 2, 59, 17" fold_btn_b="994, 427, 13, 13">
+                              <nodes>
+                                <node id="24" text="嵌套" x="1074" y="392" width="33" height="21" text_b="2, 2, 29, 17" />
+                                <node id="25" text="左右" x="1074" y="423" width="33" height="21" text_b="2, 2, 29, 17" />
+                                <node id="26" text="左中右" x="1074" y="454" width="46" height="21" text_b="2, 2, 42, 17" />
+                              </nodes>
+                              <lines>
+                                <line target="24" begin_side="Right" end_side="Left" begin_rect="931, 423, 76, 21" end_rect="1074, 392, 33, 21" />
+                                <line target="25" begin_side="Right" end_side="Left" begin_rect="931, 423, 76, 21" end_rect="1074, 423, 33, 21" />
+                                <line target="26" begin_side="Right" end_side="Left" begin_rect="931, 423, 76, 21" end_rect="1074, 454, 46, 21" />
+                              </lines>
+                            </node>
+                            <node id="27" text="插件" x="931" y="485" width="33" height="21" text_b="2, 2, 29, 17" fold_btn_b="964, 489, 13, 13">
+                              <nodes>
+                                <node id="28" text="内容太多，有待细分" x="1044" y="485" width="120" height="21" text_b="2, 2, 116, 17" />
+                              </nodes>
+                              <lines>
+                                <line target="28" begin_side="Right" end_side="Left" begin_rect="931, 485, 46, 21" end_rect="1044, 485, 120, 21" />
+                              </lines>
+                            </node>
+                            <node id="29" text="图标" x="931" y="516" width="33" height="21" text_b="2, 2, 29, 17" />
+                            <node id="30" text="表单" x="931" y="547" width="33" height="21" text_b="2, 2, 29, 17" />
+                            <node id="31" text="列表" x="931" y="578" width="33" height="21" text_b="2, 2, 29, 17" />
+                            <node id="32" text="文字" x="931" y="609" width="33" height="21" text_b="2, 2, 29, 17" />
+                            <node id="33" text="按钮" x="931" y="640" width="33" height="21" text_b="2, 2, 29, 17" />
+                            <node id="34" text="颜色" x="931" y="671" width="33" height="21" text_b="2, 2, 29, 17" />
+                            <node id="35" text="Tips:这里每个都要细分下去,并且当形成规范的那一刻起，必须有理论支撑，即为啥这么做，为什么？从&quot;视觉&quot; 与 &quot;ue&quot; 2个方面出发" x="931" y="702" width="723" height="21" text_b="2, 2, 719, 17" />
+                          </nodes>
+                          <lines>
+                            <line target="10" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 175, 33, 21" />
+                            <line target="18" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 268, 144, 21" />
+                            <line target="19" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 330, 33, 21" />
+                            <line target="23" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 423, 63, 21" />
+                            <line target="27" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 485, 33, 21" />
+                            <line target="29" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 516, 33, 21" />
+                            <line target="30" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 547, 33, 21" />
+                            <line target="31" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 578, 33, 21" />
+                            <line target="32" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 609, 33, 21" />
+                            <line target="33" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 640, 33, 21" />
+                            <line target="34" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 671, 33, 21" />
+                            <line target="35" begin_side="Right" end_side="Left" begin_rect="793, 407, 71, 21" end_rect="931, 702, 723, 21" />
+                          </lines>
+                        </node>
+                        <node id="36" text="选择突破口-干下去" x="793" y="733" width="113" height="21" text_b="2, 2, 109, 17" />
+                      </nodes>
+                      <lines>
+                        <line target="9" begin_side="Right" end_side="Left" begin_rect="655, 423, 71, 21" end_rect="793, 407, 58, 21" />
+                        <line target="36" begin_side="Right" end_side="Left" begin_rect="655, 423, 71, 21" end_rect="793, 733, 113, 21" />
+                      </lines>
+                    </node>
+                    <node id="37" text="定位-公司中的角色定位" x="655" y="764" width="137" height="21" text_b="2, 2, 133, 17" fold_btn_b="792, 768, 13, 13">
+                      <nodes>
+                        <node id="38" text="定位好角色，才能知道自己需要做些做，从而规划好发展方向" x="872" y="764" width="342" height="21" text_b="2, 2, 338, 17" />
+                      </nodes>
+                      <lines>
+                        <line target="38" begin_side="Right" end_side="Left" begin_rect="655, 764, 150, 21" end_rect="872, 764, 342, 21" />
+                      </lines>
+                    </node>
+                    <node id="39" text="技术提升" x="655" y="826" width="58" height="21" text_b="2, 2, 54, 17" fold_btn_b="713, 830, 13, 13">
+                      <nodes>
+                        <node id="40" text="外部培训" x="793" y="795" width="58" height="21" text_b="2, 2, 54, 17" fold_btn_b="851, 799, 13, 13">
+                          <nodes>
+                            <node id="41" text="这类培训主要是理论，必须有一定的层次，也就是知识累计去听才有效，不然听了，也是似是而非，费财费时。没有什么培训是没用的，重要的是做好去吸收那些知识的准备。" x="931" y="795" width="960" height="21" text_b="2, 2, 956, 17" />
+                          </nodes>
+                          <lines>
+                            <line target="41" begin_side="Right" end_side="Left" begin_rect="793, 795, 71, 21" end_rect="931, 795, 960, 21" />
+                          </lines>
+                        </node>
+                        <node id="42" text="技术研发" x="793" y="826" width="58" height="21" text_b="2, 2, 54, 17" fold_btn_b="851, 830, 13, 13">
+                          <nodes>
+                            <node id="43" text="这个很重，但是对于我们现在的状态又不是急需的，主要是分出1-2个人研究用户体验，以及一些适用当前团队的技术（UI与前端，最好是能紧密相连的技术，比如icofonts之类的）" x="931" y="826" width="991" height="21" text_b="2, 2, 987, 17" />
+                          </nodes>
+                          <lines>
+                            <line target="43" begin_side="Right" end_side="Left" begin_rect="793, 826, 71, 21" end_rect="931, 826, 991, 21" />
+                          </lines>
+                        </node>
+                        <node id="44" text="周例会-知识分享-技术提升" x="793" y="857" width="155" height="21" text_b="2, 2, 151, 17" fold_btn_b="948, 861, 13, 13">
+                          <nodes>
+                            <node id="45" text="有事说事，没事分享一周的自学成果（每个人都必须参与）" x="1028" y="857" width="330" height="21" text_b="2, 2, 326, 17" />
+                          </nodes>
+                          <lines>
+                            <line target="45" begin_side="Right" end_side="Left" begin_rect="793, 857, 168, 21" end_rect="1028, 857, 330, 21" />
+                          </lines>
+                        </node>
+                      </nodes>
+                      <lines>
+                        <line target="40" begin_side="Right" end_side="Left" begin_rect="655, 826, 71, 21" end_rect="793, 795, 58, 21" />
+                        <line target="42" begin_side="Right" end_side="Left" begin_rect="655, 826, 71, 21" end_rect="793, 826, 58, 21" />
+                        <line target="44" begin_side="Right" end_side="Left" begin_rect="655, 826, 71, 21" end_rect="793, 857, 155, 21" />
+                      </lines>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="8" begin_side="Right" end_side="Left" begin_rect="517, 485, 71, 21" end_rect="655, 423, 58, 21" />
+                    <line target="37" begin_side="Right" end_side="Left" begin_rect="517, 485, 71, 21" end_rect="655, 764, 137, 21" />
+                    <line target="39" begin_side="Right" end_side="Left" begin_rect="517, 485, 71, 21" end_rect="655, 826, 58, 21" />
+                  </lines>
+                </node>
+              </nodes>
+              <lines>
+                <line target="3" begin_side="Right" end_side="Left" begin_rect="178, 438, 272, 21" end_rect="517, 20, 58, 21" />
+                <line target="4" begin_side="Right" end_side="Left" begin_rect="178, 438, 272, 21" end_rect="517, 66, 58, 21" />
+                <line target="7" begin_side="Right" end_side="Left" begin_rect="178, 438, 272, 21" end_rect="517, 485, 58, 21" />
+              </lines>
+            </node>
+          </nodes>
+          <lines>
+            <line target="2" begin_side="Right" end_side="Left" begin_rect="20, 428, 78, 41" end_rect="178, 438, 259, 21" />
+          </lines>
+        </node>
+      </nodes>
+    </chart>
+  </charts>
+</document>
