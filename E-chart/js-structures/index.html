@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-charts-test</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="chart-box" id="main">
+            
+        </div>
+        <div class="sub-map-box" id="submap"></div>
+    </div>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/quanzhou.js"></script>
+<!--
+    <script type="text/javascript" src="js/qz-fc.js"></script>
+    <script type="text/javascript" src="js/qz-lc.js"></script>
+    <script type="text/javascript" src="js/qz-lj.js"></script>
+-->
+    <script type="text/javascript" >
+        var chart =echarts.init(document.getElementById('main'));
+        var subchart =echarts.init(document.getElementById('submap'));
+        chart.setOption({
+            series:[{
+                type:'map',
+                map:"泉州"
+            }]
+        });
+        
+        chart.on('click', function (params) {
+            // 控制台打印数据的名称
+            console.info(params);
+            console.info(params.name);
+//            if('鲤城区' == params.name){
+                subchart.setOption({
+                    series:[{
+                       type:'map',
+                        map:'鲤城区'
+                    }]
+                }); 
+//            }
+        });
+
+    </script>
+</body>
+</html>

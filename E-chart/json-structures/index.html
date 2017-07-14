@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-charts-test</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="chart-box" id="main">
+            
+        </div>
+        <div class="sub-map-box" id="submap"></div>
+    </div>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/jquery1.8.3.js"></script>
+
+    <script type="text/javascript" >
+        var subchart =echarts.init(document.getElementById('submap'));
+        var chart = echarts.init(document.getElementById('main'));
+         //获取青岛地图数据。
+         $.get('js/quanzhou.json', function(getJSON) { 
+             echarts.registerMap("泉州",getJSON);
+             chart.setOption({
+                    series: {
+                        type: 'map',
+                        map:"泉州",
+                        itemStyle:{
+                            normal:{
+                                 areaColor:"#68cca6"
+                             },
+                            emphasis:{
+                                areaColor:"rgb(67, 144, 115)",
+                                color: '#fff',
+                                shadowColor: 'rgba(0, 0, 0, 0.5)',
+                                shadowBlur: 10,
+                                shadowOffsetY:0,
+                                shadowOffsetX:0
+                            }
+                        }
+                    },
+                    title:{
+                        show:true,
+                        text:'撒即可'
+                    }
+                    
+                });
+         })
+        var datamap = {
+            '鲤城区':'lcq',
+            '丰泽区':'fzq',
+            '永春县':'ycx',
+            '德化县':'dhx',
+            '安溪县':'axx',
+            '惠安县':'hax',
+            '晋江市':'jjs',
+            '泉港区':'qgq',
+            '洛江区':'ljq',
+            '南安市':'nas',
+            '金门县':'jmx',
+            '石狮市':'sss'
+        }
+        chart.on('click', function (params) {
+            var city = datamap[params.name];
+            
+            $.get('js/' + city + '.json', function(getJSON) { 
+             echarts.registerMap("city",getJSON);
+             subchart.setOption({
+                    series: {
+                        type: 'map',
+                        map:"city"
+                    }
+                });
+         })
+            console.info(city);
+        });
+    </script>
+</body>
+</html>

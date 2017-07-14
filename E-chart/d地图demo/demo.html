@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 
+	</head>
+	<body>
+		 <div id="main" style="width: 600px;height:400px;"></div>
+		 <div id="main2" style="width: 600px;height:400px;"></div>
+		 <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+		 <script src="echarts.min.js"></script>
+		 <script>
+		 	$.getJSON('./hb.json', function (data) {
+		 		console.log(data.features[0]);
+		 		console.log(data.features[1]);
+		 		echarts.registerMap('hb', data);
+                var chart = echarts.init(document.getElementById('main'));
+                chart.setOption({
+                    series: [{
+                        type: 'map',
+                        map:"hb",
+                        itemStyle:{
+                            normal:{
+                                label:{
+                                    show:true
+                                }
+                            },
+                            emphasis:{
+                                label:{
+                                    show:true
+                                }
+                            }
+                        },
+
+
+                    }]
+                });
+                chart.on('click', function (params) {
+                    var selectCity=params.name;
+                    $.getJSON(''+selectCity+'.json', function (data) {
+                            echarts.registerMap('selectCity', data);
+                            var chart2 = charts.init(document.getElementById('main2'));
+                            chart2.setOption({
+                                series: [{
+                                    type: 'map',
+                                    map: 'selectCity',
+                                    itemStyle:{
+                                        normal:{
+                                            label:{
+                                                show:true
+                                            }
+                                        },
+                                        emphasis:{
+                                            label:{
+                                                show:true
+                                            }
+                                        }
+                                    }
+                                }]
+                          });
+                    });
+                });
+      });
+</script>
+</body>
+</html>
