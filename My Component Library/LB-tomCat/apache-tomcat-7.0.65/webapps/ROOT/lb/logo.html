@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>logo</title>
+<style type="text/css">
+html,body{
+  height: 100%;
+}
+div{
+  box-sizing: border-box;
+}
+.logo{
+}
+.logo-contain{
+  position: relative;
+  width: 82px;
+  height: 100px;
+  overflow: hidden;
+  margin: 50px auto 20px auto;
+  border: 1px solid rgba(100,100,100,.4);
+}
+.logo-bg-top{
+    width: 80px;
+    border-top: 50px #555 solid;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    z-index: 1;
+}
+.logo-bg-bottom{
+    width: 60px;
+    margin: 0 auto;
+    border-top: 39px #555 solid;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+.logo-head-top{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 80px;
+    border-top: 17px solid #333;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+.logo-head-bottom{
+    position: absolute;
+    top: 17px;
+    left: 12px;
+    width: 56px;
+    border-top: 11px solid #333;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+}
+.logo-crown-bg-top{
+    border-top: 30px solid #333;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 14px;
+    left: 20px;
+}
+.logo-crown-bg-intop{
+    width: 30px;
+    border-top: 33px solid #555;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    left: 25px; 
+}
+.logo-crown-bg-bottom{
+    position: absolute;
+    top: 43px;
+    left: 30px;
+    width: 20px;
+    border-top: 13px solid #333;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    z-index: 2;
+}
+
+.logo-crown-bg-inbottom{
+    position: absolute;
+    top: 43px;
+    left: 33px;
+    width: 14px;
+    border-top: 9px solid #555;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    z-index: 3;
+  }
+.logo-crown-ico{
+    width: 8px;
+    border-top: 11px solid #4CBEFF;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    z-index: 9;
+    top: 29px;
+    left: 36px;
+}
+.logo-crown-top{
+    width: 30px;
+    border-top: 13px solid #333;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    z-index: 4;
+    top: 10px;
+    left: 25px;
+}
+.logo-fw-left{
+    height: 4px;
+    width: 13px;
+    transform: skew(45deg) rotate(15deg);
+    -webkit-transform: skew(48deg) rotate(17deg);
+    background-color: #333;
+    position: absolute;
+    top: 32px;
+    left: 17px;
+}
+.logo-fw-left:after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 13px;
+    transform: skew(45deg) rotate(15deg);
+    -webkit-transform: skew(0deg) rotate(0deg);
+    background-color: #333;
+    position: absolute;
+    top: 32px;
+    left: 17px;
+    top: 9px;
+    left: -4px;
+}
+.logo-fw-right{
+    height: 4px;
+    width: 13px;
+    transform: skew(-45deg) rotate(-15deg);
+    -webkit-transform: skew(-48deg) rotate(-17deg);
+    background-color: #333;
+    position: absolute;
+    top: 32px;
+    left: 51px;
+}
+.logo-fw-right:after{
+  content: '';
+  display: block;
+  height: 4px;
+  width: 13px;
+  transform: skew(-0deg) rotate(-105deg);
+  -webkit-transform: skew(-0deg) rotate(-0deg);
+  background-color: #333;
+  position: absolute;
+  top: 10px;
+  left: 3px;
+}
+.logo-eye-left{
+    width: 8px;
+    height: 6px;
+    -webkit-transform: skew(46deg) rotate(14deg);
+    -moz-transform: skew(46deg) rotate(14deg);
+    -o-transform: skew(46deg) rotate(14deg);
+    background: #4CBEFF;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 0 15px, rgba(76, 190, 255, 0.95) 0 0 10px;
+    z-index: 12;
+    left: 24px;
+    position: absolute;
+    top: 52px;
+}
+.logo-eye-right{
+    width: 8px;
+    height: 6px;
+    -webkit-transform: skew(-46deg) rotate(-14deg);
+    -moz-transform: skew(-46deg) rotate(-14deg);
+    -o-transform: skew(-46deg) rotate(-14deg);
+    background: #4CBEFF;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 0 15px, rgba(76, 190, 255, 0.95) 0 0 10px;
+    z-index: 12;
+    left: 47px;
+    position: absolute;
+    top: 52px;
+}
+
+</style>
+</head>
+
+<body style="background-color: #252525">
+<div class="logo">
+  <div class="logo-contain">
+    <!-- background -->
+    <div class="logo-bg-top"></div>
+    <div class="logo-bg-bottom"></div>
+    <!-- head -->
+    <div class="logo-head-top"></div>
+    <div class="logo-head-bottom"></div>
+    <!-- crown -->
+    <div class="logo-crown-bg-top"></div>
+    <div class="logo-crown-bg-bottom"></div>
+    <div class="logo-crown-bg-intop"></div>
+    <div class="logo-crown-bg-inbottom"></div>
+    <div class="logo-crown-top"></div>
+    <div class="logo-crown-mid"></div>
+    <div class="logo-crown-bottom"></div>
+    <div class="logo-crown-ico"></div>
+    <!-- Face wrinkles -->
+    <div class="logo-fw-left"></div>
+    <div class="logo-fw-right"></div>
+    <!-- eye -->
+    <div class="logo-eye-left"></div>
+    <div class="logo-eye-right"></div>
+  </div>
+</div>
+</body>
+</html>

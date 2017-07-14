@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>侧边栏</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/lb.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	
+})
+</script>
+<style type="text/css">
+body{
+	background: #aa4630;
+	font-family: 'Oswald';
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+button:active{
+	outline: none;
+	outline-color:#fff;
+
+}
+.side-nav{
+	position:relative;
+	padding-top:44px;
+    overflow-x: hidden;}
+.side-nav>div.active{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	-webkit-transform:translateX(0);
+	transform:translateX(0);
+	-webkit-transition-delay:.2s;
+	transition-delay:.2s;
+}
+.side-nav>div.nm{
+	-webkit-transform:translateX(-100%);
+	transform:translateX(-100%);
+}
+.side-nav>div{
+	height: 44px;
+	line-height: 44px;
+    font-size: 0;
+    cursor: pointer;
+    -webkit-transition: ease all .4s;
+    transition: ease all .4s;
+	color:#555555;
+    white-space: nowrap;
+    overflow: hidden;
+	-webkit-transform:translateX(0);
+	transform:translateX(0);
+}
+.side-nav>div .ico,.side-nav>div p{
+	display: inline-block;
+	line-height: 44px;
+    vertical-align: middle;
+}
+.side-nav>div p{
+	font-size: 16px;
+	padding-left: 15px;
+	padding-right:300px;
+	background-color:rgba(255,255,255,.95);
+    -webkit-transition: ease all .3s,background 1s;
+    transition: ease all .3s,background 1s;
+	text-shadow:0px 1px 1px rgba(255,255,255,1);
+}
+.side-nav>div:hover p,.side-nav>div.active p{
+	background-color:rgba(255,255,255,0);
+	color:#fff;
+	text-shadow:0px 1px 1px rgba(100,100,100,.5);
+}
+.side-nav>div .ico{
+	width: 44px;
+	text-align: center;
+	font-size: 20px;
+	color:#fff;
+	text-shadow:0px 1px 1px rgba(100,100,100,.5);
+}
+.sub-nav{
+	position:absolute;
+	top:44px;
+	left:100%;
+	height:calc(100% - 44px);
+	background-color:#ebebeb;
+	font-size:0;
+    width: 100%;
+    -webkit-transition: ease all .4s;
+    transition: ease all .4s;
+	-webkit-transition-delay:0s;
+	transition-delay:0s;
+	opacity:0;
+}
+.sub-nav.open{
+	left:0;
+	opacity:1;
+	-webkit-transition-delay:1s;
+	transition-delay:1s;
+}
+.sub-nav>div{
+	display:inline-block;
+	height:100%;
+	vertical-align:middle}
+.sidenav-info-open{
+	position:relative;
+	width:22px;
+	background-color:#fff;
+	cursor:pointer;
+}
+.sidenav-info-open .ico{
+	position:absolute;
+	width:100%;
+	left:0;
+	top:50%;
+	text-align:center;
+	color:#666;
+	margin-top:-8px;
+	font-size:16px;
+}
+.sub-nav-main{
+	font-size:14px;
+	color:#555;
+	width:-webkit-calc(100% - (22px));
+	width:calc(100% - (22px));
+    padding: 1em;
+    overflow-x: hidden;
+    overflow-y: auto;
+	}
+</style>
+</head>
+<body>
+<div class="sidlenav show">
+	<div class="sidlenav-wrap">
+		<div class="side-nav">
+			<div class="active" style="background-color: #444">
+				<i class="ico ico-css3"></i>
+				<p> CSS3</p>
+			</div>
+			<div class=" " style="background-color: #B3C833">
+				<i class="ico ico-react"></i>
+				<p> React</p>
+			</div>
+			<div class=" " style="background-color: #CE5043">
+				<i class="ico ico-jquery"></i>
+				<p> JQuery</p>
+			</div>
+			<div class="" style="background-color:#FB8521">
+				<i class="ico ico-js"></i>
+				<p> JavaScript</p>
+			</div>
+			<div class="" style="background-color:#1AA1E1">
+				<i class="ico ico-read"></i>
+				<p> StudyReport</p>
+			</div>
+			<div class="" style="background-color:#658092">
+				<i class="ico ico-attention"></i>
+				<p>AttentionItme</p>
+			</div>
+            <label class="sub-nav ">
+            	<div class="sidenav-info-open"><i class="ico ico-arrowright"></i></div>
+                <div class="sub-nav-main">如果这是一种奇迹，那么就让奇迹延续</div>
+            </label>
+		</div>
+	</div>
+	<div class="sidlenav-btn-wrap open">
+		<button class="sidlenav-btn">
+			<div class="sidlenav-btn-d1"></div>
+			<div class="sidlenav-btn-d2"></div>
+			<div class="sidlenav-btn-d3"></div>
+		</button>
+	</div>
+</div>
+</body>
+</html>

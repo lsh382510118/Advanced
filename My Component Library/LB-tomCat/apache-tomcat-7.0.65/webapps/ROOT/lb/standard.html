@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, content="no-cache", initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>天黑赋眼，寻铭</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/test.css">
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/js.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+  $.ajax({
+      type:"POST",
+      url:"json/color.json",
+      dataType:"json",
+      success: function(data){
+        var colorTypeNum=data.color.length;
+        var colorType1 = data.color[0].colorType1;
+        console.info(colorTypeNum);
+        console.info(data.color[colorTypeNum]);
+        var colorHtml='';
+        for(var c=0;c<colorTypeNum;c++){
+          // var colorType=data.color[colorTypeNum];
+          colorHtml = colorHtml +'<h1 class="color-title">'+data.color[c].colorType+'</h1><ul id="color-json-test" class="clear">';
+          for (var i = 0; i < data.color[c].colorArray.length; i++) {
+            colorHtml=colorHtml+'<li style="background-color:#'+data.color[c].colorArray[i].colorNum+'"><p>'+data.color[c].colorArray[i].colorNum+'</p></li>'
+          }
+          colorHtml = colorHtml +'</ul>';
+        }
+        $('.color-box').append(colorHtml);
+      }
+  });         
+})
+</script> 
+  <style type="text/css">
+.treecontent {
+  display: none;
+}
+.treecontent.current {
+  display: block;
+}
+.cssdetail-xx textarea.novel{
+  overflow-y: auto;
+  min-height: 8.4em;
+  line-height: 1.5
+}
+.disnone{
+  display: none
+}
+</style>
+</head>
+<body>
+  <div class="content displaybox">
+    <div class="lefttree">
+      <ul>
+        <li>
+          <h5 link='color.html'>颜色</h5>
+          <div class="subtree">
+            <p class=" on">。。。</p>
+            <p>....</p>
+          </div>
+        </li>
+        <li>
+          <h5 link='font.html'>字体</h5>
+        </li>
+        <li>
+          <h5 link='createName.html'>命名</h5>
+        </li>
+        <li>
+          <h5 link='createName.html'>编写规范</h5>
+          <div class="subtree">
+            <p class=" on">CSS编写规范</p>
+            <p>JS编写规范</p>
+            <p>HTML编写规范</p>
+            <p>....</p>
+          </div>
+        </li>
+        <li>
+          <h5>编写注意事项</h5>
+          <div class="subtree">
+            <p class=" on">不要使用 @import</p>
+            <p>JS编写规范</p>
+            <p>HTML编写规范</p>
+            <p>....</p>
+          </div>
+        </li>
+        <li>
+          <h5>UI设计需要注意</h5>
+        </li>
+      </ul>
+    </div>
+    <div class="rightcontent">
+      <!-- 一级模块-1：布局 -->
+      <div class="treecontent current">
+        <div class="content">
+          <h1 class="page-title">颜色</h1>
+          <div class="color-box">
+            <ul>
+              <li class="Ceff3f5 b"><p>eff3f5</p>body背景色</li>
+              <li class="C4d5879">4d5879</li>
+              <li class="Cfc6879">fc6879</li>
+              <li class="C83ce17">83ce17</li>
+              <li class="Cf3b612">f3b612</li>
+              <li class="Cff864c">ff864c</li>
+              <li class="C9961ec">9961ec</li>
+            </ul>
+            <h1 class="color-title">IOS标准色</h1>
+            <ul>
+              <li class="C007aff">007aff</li>
+              <li class="C018ef9">018ef9</li>
+              <li class="C0091ff">0091ff</li>
+              <li class="C4ca1fe">4ca1fe</li>
+              <li class="C82b7fa"><p>82b7fa</p>图标背景色</li>
+              <li class="C7bd4f3"><p>7bd4f3</p>图标背景色</li>
+              <li class="Cbda4fc"><p>bda4fc</p>图标背景色</li>
+              <li class="C4cd864">4cd864</li>
+              <li class="Ceaff00">eaff00</li>
+              <li class="Cfb9cd1"><p>fb9cd1</p>图标背景色</li>
+              <li class="Cff917b"><p>ff917b</p>图标背景色</li>
+              <li class="Cfac24f"><p>fac24f</p>图标背景色</li>
+              <li class="Cff3b30">ff3b30</li>
+              <li class="Cff3b30">ff3b30</li>
+              <li class="Cfd8108">fd8108</li>
+            </ul>
+            <ul>
+              <li class="Cffffff b"><p>ffffff</p>表单背景</li>
+              <li class="Cf0eff5 b"><p>f0eff5</p>全局背景</li>
+              <li class="Cc8c7cc"><p>c8c7cc</p>列表线条</li>
+              <li class="Caaaaaa"><p>aaaaaa</p>表单外文字</li>
+              <li class="C908f94"><p>908f94</p>输入框提示</li>
+            </ul>
+            <h1 class="color-title">东海APP设计规范-640pX</h1>
+            <ul>
+              <li class="Cfbfbfb b"><p>fbfbfb</p>头部背景色</li>
+              <li class="Cf6f6f6 b"><p>f6f6f6</p>全局背景色</li>
+              <li class="Cd8d8d8 b"><p>d8d8d8</p>边框色</li>
+              <li class="C999999 b"><p>999999</p>灰色文字</li>
+              <li class="C2da3e6"><p>2da3e6</p>主色调</li>
+              <li class="C149ce7">149ce7</li>
+              <li class="Cffbf32"><p>ffbf32</p>辅助色</li>
+              <li class="Cffb209">ffb209</li>
+              <li class="Cff6d1a"><p>ff6d1a</p>辅助色</li>
+              <li class="Cfe5d00">fe5d00</li>
+              <li class="Cff2c30"><p>ff2c30</p>辅助色</li>
+              <li class="Cf41c20">f41c20</li>
+              <li class="C52b900"><p>52b900</p>辅助色</li>
+              <li class="C50af04">50af04</li>
+            </ul>
+            <ul>
+              <li class="Cf9c664 b"><p>f9c664</p>图标背景色</li>
+              <li class="C7ecefa b"><p>7ecefa</p>图标背景色</li>
+              <li class="Cf89aa7 b"><p>f89aa7</p>图标背景色</li>
+              <li class="Cf7b57b b"><p>f7b57b</p>图标背景色</li>
+            </ul>
+            <h1 class="color-title">背景色</h1>
+            <ul>
+              <li class="Cfffafa b">FFFAFA</li>
+              <li class="Cfffaf0 b">FFFAF0</li>
+              <li class="Cffffe0 b">FFFFE0</li>
+              <li class="Cfff8dc b">FFF8DC</li>
+              <li class="Cf0ffff b">F0FFFF</li>
+              <li class="Cf0f0ff b">F0F8FF</li>
+              <li class="Cf0fff0 b">F0FFF0</li>
+              <li class="Ce0ffff b">E0FFFF</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 一级模块-2：字体 -->
+      <div class="treecontent">
+        <div class="csstitle">字体(font)-ios字号标准</div>
+        <div class="cssdetail">
+          <p>导航栏标题：</p>
+          <p class="cssdetail-xx">34px或者36px</p>
+          <p>标签栏文字：</p>
+          <p class="cssdetail-xx">20px-24px</p>
+          <p>正文字号：</p>
+          <p class="cssdetail-xx">
+            28px-36px，字体大小与行间距差异最小2px,标题与正文字号差异最小4px,一般情况下(大的正文字号32px，副问是26px,小字20px,而列表形式、工具化的APP普遍是正文32px,不加粗。)
+          </p>
+          <p>副文案：</p>
+          <p class="cssdetail-xx">26px,小字20px,26px的字号还会用于划分类别的提示文案。</p>
+          <p>大按钮：</p>
+          <p class="cssdetail-xx">36px</p>
+          <p>备注：</p>
+          <p class="cssdetail-xx">以8位基本单位，把所有字号、文本框宽度设定为8的倍数，这样我们就可以确保汉子始终保持对齐</p>
+        </div>
+        <div class="csstitle">字体(font)-行宽和行高</div>
+        <div class="cssdetail">
+          <p>PC端行宽：</p>
+          <p class="cssdetail-xx">65字符左右</p>
+          <p>移动端行宽：</p>
+          <p class="cssdetail-xx">39字符</p>
+          <p>行高：</p>
+          <p class="cssdetail-xx">
+            1.4em.行距是行之间的空间，行距太紧凑，会让视线难以从行尾扫视到下一行首。行距太宽松，字间距会开始形成队列，产生了我们通常意义上的河流，阻断了行的视觉流。(移动端并没有普遍认可的行宽标准。不过传统上，报纸或杂志上每一个窄列都会趋向于39个字符。鉴于这个理想行宽已经经历了数个世纪的考验，它在移动端字体上也运转良好。)
+          </p>
+        </div>
+        <div class="csstitle">字体(font)-不要忽视起伏边</div>
+        <div class="cssdetail">
+          <p class="cssdetail-xx">起伏边是一段文字的边缘。你读的多数内容是居左对齐的（至少对于拉丁语系而言），导致右边沿参差不齐。</p>
+          <p class="cssdetail-xx">
+            当视线从行尾跳至下一行首时，大脑最好要能判断出下一次跳跃的角度和距离。把每次跳跃都想象成跑过跳板，如果间距保持一致，就会快很多。因此，文字左侧边缘应该是平的，每行从同一个地方开始（对于从右至左的语言，恰好相反）。
+          </p>
+          <p class="cssdetail-xx">因此你绝不应该将两三行以上的文字居中对齐。</p>
+          <p class="cssdetail-xx">
+            通常文字会设置成两端对齐，这意味着每行文字所占空间相等，所以两侧都不会有起伏边。我怀疑两端对齐的流行和响应式设计有关，它教设计师们以块状形态思考。两端对齐的文字产生的留白不统一。最糟的情况会导致一行中只有几个字，相当不协调。更窄的行宽会加重两端对齐的问题，所以两端对齐的文字在移动端是难以阅读的。
+          </p>
+        </div>
+      </div>
+      <!-- 一级模块-3：命名规范 -->
+      <div class="treecontent">
+        <h1 class="css-title">
+          <a href="http://www1.w3cfuns.com/article-251-1-1.html">站外拓展</a>
+          命名规范
+        </h1>
+        <div class="subtreecontent">
+          <div class="csstitle">命名规范</div>
+          <div class="cssdetail">
+            <p>规范化命名的代码，会显着你更加专业！</p>
+            <p class="cssdetail-xx">
+              头：header
+              <br>
+              内容：content/container
+              <br>
+              尾：footer
+              <br>
+              导航：nav
+              <br>
+              侧栏：sidebar
+              <br>
+              栏目：column
+              <br>
+              页面外围控制整体布局宽度：wrapper
+              <br>
+              左右中：left right center
+              <br>
+              登录条：loginbar
+              <br>
+              标志：logo
+              <br>
+              广告：banner
+              <br>
+              页面主体：main
+              <br>
+              热点：hot
+              <br>
+              新闻：news
+              <br>
+              下载：download
+              <br>
+              子导航：subnav
+              <br>
+              菜单：menu
+              <br>
+              子菜单：submenu
+              <br>
+              搜索：search
+              <br>
+              友情链接：friendlink
+              <br>
+              页脚：footer
+              <br>
+              版权：copyright
+              <br>
+              滚动：scroll
+              <br>
+              小技巧：tips
+              <br></p>
+          </div>
+        </div>
+        <div class="subtreecontent">
+          <div class="csstitle">页面模块的常用命名</div>
+          <div class="cssdetail">
+            <p>允许独立的滚动区域和触摸回弹：-webkit-overflow-scrolling : touch;</p>
+            <p class="cssdetail-xx">
+              IOS微信滚动不平滑BUG，可以在滚动的DIV上加上次样式，可以解决此BUG，但是不知道是否同时也挖下了临时坑。此后补充。。充。。。充。。。。
+            </p>
+            <p class="cssdetail-xx">
+              Thorough research on spirit ：
+              <a href="http://www.cnblogs.com/PeunZhang/p/3553020.html">【有空就戳我】</a>
+            </p>
+            <p>硬件加速：-webkit-transform:transition3d(0,0,0);</p>
+            <p class="cssdetail-xx">通过平衡浏览器的性能，来加大浏览器对动画的资源分配，以至动画更平滑（个人理解，此处maybe有坑，莫跳莫跳。。）</p>
+            <p class="cssdetail-xx">
+              苍老师说的坑：
+              <a href="http://www.cnblogs.com/zyyz/p/4975329.html">【有空就戳我】</a>
+            </p>
+            <p>有4种样式(方式)：行内样式、内嵌样式、链接样式、导入样式</p>
+            <p class="cssdetail-xx">
+              四种样式的优先级按照“就近原则”：行内样式 > 内嵌样式 > 链接样式 > 导入样式。
+              <a href="http://www1.w3cfuns.com/article-244-1-1.html">【有空就戳我】</a>
+            </p>
+            <p>*{margin:0; padding:0;}</p>
+            <p class="cssdetail-xx">
+              因为每种浏览器都自带有CSS文件，如果一个页面在浏览器加载页面后，发现没有CSS文件，那么浏览器就会自动调用它本身自带的CSS 文件，但是不同的浏览器自带的CSS文件又都不一样，对不同标签定义的样式不一样，如果我们想让做出的页面能够在不同的浏览器显示出来的效果都是一样的，那么我们就需要对HTML标签重置，就是上面的代码了，但是这样也有不好的地方，因为HTML4.01中有89个标签，所以相当于在页面加载CSS的时候，先对这89个标签都加上了{margin:0; padding:0;}，在这里我不建议大家这么做，因为89个标签中需要重置的标签是很少数，没有必要将所有的标签都重置，用到哪些标签就定义哪些标签
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- 一级模块-4：-->
+      <div class="treecontent">
+        <h1 class="css-title">
+          <a href="http://codeguide.bootcss.com/#html-syntax">站外拓展</a>
+          编写规范
+        </h1>
+        <div class="subtreecontent">
+          <div class="csstitle">CSS规范</div>
+          <div class="cssdetail">
+            <p>规范化命名的代码，会显着你更加专业！</p>
+            <p class="cssdetail-xx">
+              用两个空格来代替制表符（tab） -- 这是唯一能保证在所有环境下获得一致展现的方法。
+              <br>
+              为选择器分组时，将单独的选择器单独放在一行。
+              <br>
+              为了代码的易读性，在每个声明块的左花括号前添加一个空格。
+              <br>
+              声明块的右花括号应当单独成行。
+              <br>
+              每条声明语句的 : 后应该插入一个空格。
+              <br>
+              为了获得更准确的错误报告，每条声明都应该独占一行。
+              <br>
+              所有声明语句都应当以分号结尾。最后一条声明语句后面的分号是可选的，但是，如果省略这个分号，你的代码可能更易出错。
+              <br>
+              对于以逗号分隔的属性值，每个逗号后面都应该插入一个空格（例如，box-shadow）。
+              <br>
+              不要在 rgb()、rgba()、hsl()、hsla() 或 rect() 值的内部的逗号后面插入空格。这样利于从多个属性值（既加逗号也加空格）中区分多个颜色值（只加逗号，不加空格）。
+              <br>
+              对于属性值或颜色参数，省略小于 1 的小数前面的 0 （例如，.5 代替 0.5；-.5px 代替 -0.5px）。
+              <br>
+              十六进制值应该全部小写，例如，#fff。在扫描文档时，小写字符易于分辨，因为他们的形式更易于区分。
+              <br>
+              尽量使用简写形式的十六进制值，例如，用 #fff 代替 #ffffff。
+              <br>
+              为选择器中的属性添加双引号，例如，input[type="text"]
+              <br>
+              。只有在某些情况下是可选的，但是，为了代码的一致性，建议都加上双引号。
+              <br>
+              避免为 0 值指定单位，例如，用 margin: 0; 代替 margin: 0px;。
+              <br></p>
+          </div>
+        </div>
+      </div>
+      <!-- 一级模块-5：-->
+      <div class="treecontent">
+        <h1 class="css-title">
+          <a href="http://codeguide.bootcss.com/#html-syntax">站外拓展</a>
+          编写注意事项
+        </h1>
+        <div class="subtreecontent">
+          <div class="csstitle">不要使用 @import</div>
+          <div class="cssdetail">
+            <p>不要使用 @import</p>
+            <p class="cssdetail-xx">
+              <textarea>
+                与
+                <link>
+                标签相比，@import 指令要慢很多，不光增加了额外的请求次数，还会导致不可预料的问题。替代办法有以下几种：
+            使用多个
+                <link>
+                元素
+            通过 Sass 或 Less 类似的 CSS 预处理器将多个 CSS 文件编译为一个文件
+            通过 Rails、Jekyll 或其他系统中提供过 CSS 文件合并功能
+              </textarea>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 一级模块-6：-->
+      <div class="treecontent">
+        <h1 class="css-title">
+          <a href="http://www.imooc.com/article/5001">站外拓展</a>
+          编写注意事项
+        </h1>
+        <div class="subtreecontent">
+          <div class="csstitle">重新认识UI设计</div>
+          <div class="cssdetail">
+            <p>1.色彩：</p>
+            <p class="cssdetail-xx">
+              需要理解色彩的基本原理以及配色方法。色彩很难把控，因为它很容易被过度使用。如果，你还是一个初学者，那么尽可能使用柔和的色彩，仅在需要强调的地方使用更醒目的色彩。
+            </p>
+            <p>2.字体与排版：</p>
+            <p class="cssdetail-xx">
+              文字往往占据整个设计内容超过80%的区域，所以理解如何使用正确的字体和排版方式非常重要。请将内容的清晰易读作为你定义字体和做排版的首要目标。
+            </p>
+            <p>3.动效：</p>
+            <p class="cssdetail-xx">
+              动效能够显著增强一个应用的用户体验。他们能使你的应用更有生气和迷人，前提是你所设计的动效快速、流畅，并且是符合用户预期的。
+            </p>
+            <p>4.图标：</p>
+            <p class="cssdetail-xx">
+              优秀的图标往往与我们每天见到的事物紧密关联，比如 相机、垃圾桶、云等等，能让人一眼就识别出它所代表的功能。因此，使用那些具有良好辨识度的图标，避免让用户产生混淆。
+            </p>
+            <p>5.声效：</p>
+            <p class="cssdetail-xx">声效在设计中用得很少，但恰如其分的声效能够提升用户体验。用户不用看到你的应用，光听到一个熟悉的声音便能识别出你的产品来。</p>
+            <p>6.获得设计灵感：</p>
+            <p class="cssdetail-xx">设计灵感不是与生俱来的，你需要不断地寻找它。有很多获得设计灵感的方法，下文中我将分享我的一些经验。</p>
+            <p>7.字体与排版：</p>
+            <p class="cssdetail-xx">
+              文字往往占据整个设计内容超过80%的区域，所以理解如何使用正确的字体和排版方式非常重要。请将内容的清晰易读作为你定义字体和做排版的首要目标。
+            </p>
+            <p>8.设计原则：</p>
+            <p class="cssdetail-xx">
+              流行转瞬即逝，但设计中最本质的东西却能永恒。设计大师们很早就认识到了这些，并将它们提炼为设计原则。你要做的是，理解这些设计原则，并将它们运用到你的设计之中。
+            </p>
+            <p>9.用户体验设计：</p>
+            <p class="cssdetail-xx">你需要了解你的用户，这样才能设计出符合用户需求的产品。学习设计心理学，将有利于你设计出更人性化的产品。</p>
+            <p>10.基于不同平台的设计：</p>
+            <p class="cssdetail-xx">在不同平台设计产品有很大的差异，你需要了解产品所在的平台（如 IOS，Android），并符合它们各自的设计规范。</p>
+            <p>11.设计工具：</p>
+            <p class="cssdetail-xx">设计工具有很多，对于UI设计，我建议使用Sketch3，因为它是专为UI设计而生的，能给你带来更高的设计效率。</p>
+          </div>
+          <div class="csstitle">改变设计工具</div>
+          <div class="cssdetail">
+            <p>1.色彩：</p>
+            <p class="cssdetail-xx">
+              自从我改变学习UI的方法之后，一直到今天，我每天都会坚持阅读 Designer News 上的每日推荐文章，它能让我了解国外优秀的设计师门都在想些什么或做些什么。而这之中，给我带来最大改变的便是，我放弃了原来使用的 PhotoShop，而开始使用Sketch来进行UI设计。因为我惊讶地发现越来越多的国外设计师，特别是在初创公司的设计师们开始使用Sketch作为他们的设计工具。
+            </p>
+            <p>：</p>
+            <p class="cssdetail-xx">
+              （ 下图为2015年 Substraction.com 对4,000名来自不同领域的UI设计师的问卷调查后得到的UI设计工具使用情况 ，Sketch已经大幅超越PhotoShop成为设计师们首选的UI设计工具）
+            </p>
+            <p>：</p>
+            <p class="cssdetail-xx">
+              2015 Subtraction.com Design Tools Survey - Interface Design
+              <br>实践证明，Sketch的使用确实给我带来了极大的惊喜。</p>
+            <p>：</p>
+            <p class="cssdetail-xx">
+              小巧快捷：Sketch只有41M，相较1.6GB的Photoshop来说显得非常的小巧。因此无论是安装，还是启动、运行，Sketch都非常快捷。
+            </p>
+            <p>：</p>
+            <p class="cssdetail-xx">
+              专为UI设计而生：Photoshop是一个图片处理工具，它包含了大量图片处理功能，而这些对于UI设计师来说是多余的，并会成为UI设计师们工作时的噪音，降低他们的设计效率。而Sketch则专注于UI设计，它的所有功能都只为UI设计服务，比如：使用统一的计量单位 Pixel 使你不必关注其他计量单位（cm，ml，picas），支持HSB、RGB颜色模型和色板功能，使用Symbol可以将方便的复用你的设计元素，针对任意设计元素或元素组导出不同分辨率的图片 等等。另外你不用再面对一个一半功能都不会去碰的工具栏，也完全不用去关心那些与UI设计无关的东西，这使你更容易学习和掌握这个设计工具。
+            </p>
+            <p>：</p>
+            <p class="cssdetail-xx">
+              强大的插件功能 ：虽然Sketch的核心非常小，但它却提供了非常强大的插件功能。针对不同的设计场景，可以使用不同的插件。比如，你可以使用Sketch Palettes保存你的常用色板，并与朋友方便地分享。使用 Magic Mirror
+            </p>
+            <p>：</p>
+            <p class="cssdetail-xx">
+              可以将你的设计方便地展示到不同的实体模型（如: iPhone，iPad，书的封面 等等）。也可以使用 Sketch Content Generator 来批量地产生内容，这能为设计师节省大量的时间。还有像Measure、Dynamic Button、Sketch Constraints 等许多非常优秀的插件可以帮助你大大提升工作效率，从而使你更能够专注于设计本身。
+            </p>
+            <p>：</p>
+            <p class="cssdetail-xx">
+              以上只是Sketch所带来的众多优秀特性中的一小部分，网上已经有很多关于Sketch的设计教程和指南，你能通过这些资料，快速的学习并掌握Sketch。我正看到越来越多如Sketch，Affinity Designer, Affinity Photo 等创新工具对设计工具领域带来的变革，他们不再追求大而全，而更注重于以最简洁、高效的方式服务于不同的设计目的。这也正是互联网思维在设计工具领域的一个体现。因此，如果你是一个UI设计初学者，亦或已经是一名UI设计师并正在使用PS、AI等工具，我都建议你尝试使用Sketch，因为，它是一个能给你带来巨大改变并代表着未来的优秀设计工具。
+            </p>
+          </div>
+          <div class="csstitle">寻找设计灵感</div>
+          <div class="cssdetail">
+            <p>1.色彩：</p>
+            <p class="cssdetail-xx">
+              对于设计初学者来说，经常会为找不到设计灵感而苦恼。而我想说的是，灵感不是与生俱来的，它需要你去不断地寻找。如果没有灵感，你将永远不能开始，更别说去完成一个设计了。下面是我使用的一些方法。
+            </p>
+            <p>2.字体与排版：</p>
+            <p class="cssdetail-xx">
+              我没有上过任何设计学校或培训班，因此我的大部分设计知识，都是从阅读中获得的。我几乎不读那些30天速成系列的书或关于设计趋势的文章，因为我知道技术的变化是非常快的，正如，我现在完全使用Sketch来做设计，而不用PS一样。我更关注设计的本质，书是获得这方面知识的很好途径。
+            </p>
+            <p>3.动效：</p>
+            <p class="cssdetail-xx">
+              下面是我书橱中的一部分设计类书籍，我阅读那些对设计有着深刻思想的人物传记 如《乔布斯传》，与设计相关的心理学书籍《设计心理学》、与色彩相关的《色彩设计》，与字体相关的《设计师的自我修养》等等。也正是通过这些书籍，让我逐步理解了设计的内涵，从而让我彻底走出了之前学习设计时的误区。
+            </p>
+            <p>4.间距：</p>
+            <p class="cssdetail-xx">
+              
+              <textarea name="" class="novel">
+                如《乔布斯传》，
+              与设计相关的心理学书籍《设计心理学》、与色彩相关的《色彩设计》，  与字体相关的《设计师的自我修养》等等
+
+
+              </textarea>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
